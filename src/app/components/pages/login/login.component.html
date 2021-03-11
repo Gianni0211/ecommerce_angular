@@ -1,0 +1,23 @@
+<div class="wrapper fadeInDown">
+ <div id="formContent">
+  <!-- Tabs Titles -->
+
+  <!-- Icon -->
+  <div class="fadeIn first">
+   <fa-icon class="icon-user" [icon]="faUser"></fa-icon>
+  </div>
+
+  <!-- Login Form -->
+  <form (submit)="loginUser($event)">
+   <input type="text" id="username" class="fadeIn second input" name="username" placeholder="Username">
+   <input type="password" id="password" class="fadeIn third input" name="password" placeholder="password">
+   <input type="submit" class="fadeIn fourth" value="Accedi">
+  </form>
+
+  <!-- Remind Passowrd -->
+  <div id="formFooter">
+   <a class="underlineHover" href="#">Password dimenticata?</a>
+  </div>
+
+ </div>
+</div>

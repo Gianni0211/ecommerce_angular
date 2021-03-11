@@ -1,0 +1,13 @@
+<div class="card card-custom">
+ <img class="img-custom" *ngIf="item.name === 'Pane'" src="../../../assets/img/pane-commerce.jpg" 
+ alt="item.img" class="img">
+ <img class="img-custom" *ngIf="item.name === 'Birra'" src="../../../assets/img/birra-ecommerce.jpeg" alt="item.img" class="img">
+ <img class="img-custom" *ngIf="item.name === 'Pasta'" src="../../../assets/img/pasta-ecommerce.jpeg" alt="item.img" class="img">
+ <img class="img-custom" *ngIf="item.name === 'Sigarette'" src="../../../assets/img/sigarette-ecommerce.jpeg" alt="item.img" class="img">
+ 
+ <div class="desc">
+<p class="">{{item.name}}</p>
+<p class="price">{{item.price}} <span>€</span></p>
+ </div>
+ 
+</div>

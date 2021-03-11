@@ -1,0 +1,30 @@
+.nav-bg {
+  background-color: #cee5f2;
+}
+.nav-custom-color {
+  color: #536b78;
+}
+
+.login {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.icon-user {
+  position: relative;
+  top: 30px;
+  left: 8px;
+  opacity: 1;
+  transition: 0.5s;
+}
+.link-login {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+.link-login:hover > .icon-user {
+  opacity: 0;
+}
+.link-login:hover > .login {
+  opacity: 1;
+}

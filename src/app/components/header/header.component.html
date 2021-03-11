@@ -1,0 +1,20 @@
+<div class="container">
+ <div class="row">
+  <div class="col-12">
+   <div class="jumbotron text-center">
+    
+    <h1 class="display-4">Benvenuti su OMcommerce</h1>
+    <p class="lead">Controlla i nostri i prodotti</p>
+    <div class="carousel-custom ">
+     <app-card
+     *ngFor="let item of items"
+     [item]="item"
+     >
+    </app-card>
+    
+    </div>
+   
+   </div>
+  </div>
+ </div>
+</div>
