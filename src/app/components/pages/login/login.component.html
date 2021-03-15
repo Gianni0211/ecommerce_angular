@@ -8,10 +8,11 @@
   </div>
 
   <!-- Login Form -->
-  <form (submit)="loginUser($event)">
-   <input type="text" id="username" class="fadeIn second input" name="username" placeholder="Username">
-   <input type="password" id="password" class="fadeIn third input" name="password" placeholder="password">
+  <form (submit)="login()">
+   <input type="text" [(ngModel)]="username" id="username" class="fadeIn second input" name="username" placeholder="Username">
+   <input type="password" [(ngModel)]="password" id="password" class="fadeIn third input" name="password" placeholder="password">
    <input type="submit" class="fadeIn fourth" value="Accedi">
+   <div *ngIf="error === true" class="allert bg-danger">Email o password errati</div>
   </form>
 
   <!-- Remind Passowrd -->

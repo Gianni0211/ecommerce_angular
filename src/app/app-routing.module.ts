@@ -6,11 +6,11 @@ import { LoginComponent } from './components/pages/login/login.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HeaderComponent
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   }
 ];

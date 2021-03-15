@@ -6,10 +6,11 @@
   <div class="navbar-nav    w-100  ">
    <a class="nav-item pl-5 nav-link nav-custom-color lead" href="#">Carrello</a>
   </div>
-  <a routerLink="/login" class="float-right nav-custom-color lead link-login"  title="login" >
+  <a  routerLink="/login"  class="float-right nav-custom-color lead link-login"  title="login" >
    <fa-icon class="icon-user" [icon]="faUser"></fa-icon>
    <p class="login">Login</p>
   </a>
+  <p *gnElse>{{user.username}}</p>
  
  </nav>
  

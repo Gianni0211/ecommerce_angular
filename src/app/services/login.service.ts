@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import { Observable} from 'rxjs';
+import { User } from 'src/app/models/User';
 
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-type': 'application/json'
-  })
-}
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,20 +12,19 @@ const httpOptions = {
 export class LoginService {
   url: string = 'http://localhost:8080//api/user/login';
 
+
   constructor(private http: HttpClient) { }
 
-  openModal(){
-
-  }
-  getUser(username, password){
-    let params = new HttpParams();
-    params = params.append('username', username);
-    params = params.append('password', password); 
-       
-    return this.http.get(this.url, 
-       {params: params}).subscribe(data => {
-         console.log(data);
-         
-       })
+  
+  login(username: string, password: string ): Observable<any>{
+    let resp: Observable<any>;
+    let params = new HttpParams()
+    .set('username', username)
+    .set('password', password); 
+    
+      
+    resp = this.http.post(this.url, null,
+      {params: params, responseType: 'text'});
+      return resp;
   }
 }

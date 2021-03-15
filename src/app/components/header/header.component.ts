@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.itemService.getItems().subscribe(items => {
-      console.log(items);
       this.items = items;
     })
   }
