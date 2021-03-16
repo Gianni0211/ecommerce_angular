@@ -5,14 +5,25 @@
     
     <h1 class="display-4">Benvenuti su OMcommerce</h1>
     <p class="lead">Controlla i nostri i prodotti</p>
-    <div class="carousel-custom ">
+    <ngb-carousel class="carousel-custom">
+     <ng-template *ngFor="let item of items" class="" ngbSlide>
+      <div  class=" ">
+       <app-card [item]="item"></app-card>
+      </div>
+    
+     </ng-template>
+    
+    
+    </ngb-carousel>
+    <!-- <div class="carousel-custom ">
+     
      <app-card
      *ngFor="let item of items"
      [item]="item"
      >
     </app-card>
     
-    </div>
+    </div> -->
    
    </div>
   </div>

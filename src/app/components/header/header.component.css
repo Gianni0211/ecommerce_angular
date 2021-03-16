@@ -1,11 +1,6 @@
 .carousel-custom {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 900px;
+  width: 600px;
   margin-top: 50px;
-  overflow-x: auto;
-}
-.carousel-custom::-webkit-scrollbar {
-  display: none;
+  margin: auto;
+  color: black;
 }

@@ -33,9 +33,6 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.username, this.password).subscribe(data => {
       let headers = new HttpHeaders();
       headers.set('auth-token', data);
-      console.log(headers.getAll('auth-token'));
-      
-      
       
       this.jwtService.storeJWTToken(data);
       this.router.navigate(['home']);

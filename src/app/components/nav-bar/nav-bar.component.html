@@ -1,16 +1,15 @@
 <div class="px-5 py-2 nav-bg w-100 mb-5">
- <nav class="navbar navbar-expand-lg  px-10">
-  <a class="navbar-brand nav-custom-color lead " routerLink="/">
-   <fa-icon [icon]="faCashRegister"></fa-icon>
+ <nav class="navbar px-10">
+  <a class="navbar-brand home-icon nav-custom-color fs-2 " routerLink="/home">
+   <fa-icon class="home-icon" [icon]="faCashRegister"></fa-icon>
   </a>
-  <div class="navbar-nav    w-100  ">
-   <a class="nav-item pl-5 nav-link nav-custom-color lead" href="#">Carrello</a>
+ 
+  <div class="float-end nav-custom-color d-flex flex-row lead "   >
+   <p class="me-4">{{userName}}</p>
+   <fa-icon class="cart-icon" routerLink="/cart" [icon]="faShoppingCart"></fa-icon>
+   <span class="count">{{itemsCount}}</span>
   </div>
-  <a  routerLink="/login"  class="float-right nav-custom-color lead link-login"  title="login" >
-   <fa-icon class="icon-user" [icon]="faUser"></fa-icon>
-   <p class="login">Login</p>
-  </a>
-  <p *gnElse>{{user.username}}</p>
+  
  
  </nav>
  

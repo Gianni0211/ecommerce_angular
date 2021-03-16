@@ -12,6 +12,11 @@ import { CardComponent } from './components/card/card.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/pages/login/login.component';
+import { AddBtnComponent } from './components/add-btn/add-btn.component';
+import { QuantityModalComponent } from './components/quantity-modal/quantity-modal.component';
+import { CartComponent } from './components/pages/cart/cart.component';
+
+
 
 
 @NgModule({
@@ -21,6 +26,11 @@ import { LoginComponent } from './components/pages/login/login.component';
     HeaderComponent,
     CardComponent,
     LoginComponent,
+    AddBtnComponent,
+    QuantityModalComponent,
+    CartComponent,
+    
+    
     
     
   ],

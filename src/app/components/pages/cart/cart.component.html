@@ -1,0 +1,40 @@
+
+<div class="card bill shaddow">
+ <div class="m-3 row">
+  <div class="col-5">
+   <h5>Articolo</h5>
+  </div>
+  <div class="col-3">
+   <h5>Quantita</h5>
+  </div>
+  <div class="col-2">
+   <h5>Prezzo</h5>
+  </div>
+ 
+ </div>
+ <div class=" m-3 row" *ngFor="let det of details">
+  <div class="col-5">
+   <p class="lead">{{det.item.name}}</p>
+  </div>
+  <div class="col-3">
+   <p class="lead">{{det.quantity}}</p>
+  </div>
+  <div class="col-2">
+   <p class="lead">{{det.item.price * det.quantity}}</p>
+  </div>
+ </div>
+ <div class="row  m-3">
+  <div class="col-12 text-end ">
+   <h5>Totale</h5>
+  </div>
+  <div class="col-12 text-end mt-2 ">
+   <p class="lead">{{total}}</p>
+  </div>
+ </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+

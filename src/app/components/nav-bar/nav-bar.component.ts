@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faCashRegister, faUser } from '@fortawesome/free-solid-svg-icons';
-import { User } from 'src/app/models/User';
-import { LoginService } from 'src/app/services/login.service';
+import { faCashRegister, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { CartService } from 'src/app/services/cart.service';
+
+import { JwtService } from 'src/app/utils/jwt.service';
+
 
 
 @Component({
@@ -13,15 +15,20 @@ export class NavBarComponent implements OnInit {
 
   
   faCashRegister = faCashRegister;
-  faUser = faUser;
-  user: User;
-  constructor(private loginService: LoginService) { }
+  faShoppingCart = faShoppingCart;
+  userName : string;
+  itemsCount: number;
+  constructor(
+    private jwtService: JwtService,
+    private cartService: CartService
+    ) { }
 
   ngOnInit(): void {
-   
-   
+  this.userName = this.jwtService.decodeToken().user_name;
+  this.cartService.getCart().subscribe(cart => {
+   this.itemsCount =  cart.details.length;
+    
+  })
   }
-setUser(){
-  
-}
+
 }

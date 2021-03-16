@@ -1,0 +1,26 @@
+.btn-bg-custom {
+  background-color: #cee5f2;
+  color: #536b78;
+  transition: 0.3s;
+}
+.btn-bg-custom:hover {
+  color: #cee5f2;
+  background-color: #536b78;
+}
+.arrow-btn {
+  background-color: #cee5f2;
+  color: #536b78;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+.arrow-btn:hover {
+  color: #cee5f2;
+  background-color: #536b78;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

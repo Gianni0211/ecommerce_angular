@@ -1,0 +1,10 @@
+.btn-bg-custom {
+  background-color: #cee5f2;
+  color: #536b78;
+  transition: 0.3s;
+}
+
+.btn-bg-custom:hover {
+  color: #cee5f2;
+  background-color: #536b78;
+}
