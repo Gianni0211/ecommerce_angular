@@ -13,7 +13,6 @@ import { CartService } from 'src/app/services/cart.service';
 export class QuantityModalComponent implements OnInit {
   @Input() item: Item;
   
-  
   faMinus = faMinus;
   faPlus = faPlus;
   quantity : number = 0;
@@ -21,7 +20,7 @@ export class QuantityModalComponent implements OnInit {
   
 
   constructor(config: NgbModalConfig, private modalService: NgbModal, private cartService: CartService) {
-    // customize default values of modals used by this component tree
+    
     config.backdrop = 'static';
     config.keyboard = false;
   }
@@ -55,11 +54,6 @@ export class QuantityModalComponent implements OnInit {
       this.modalService.dismissAll();
       alert('Articolo aggiunto al carrello');
       this.cartService.sendClickEvent();  
-      
-      
-      
     });
-    
   }
-
 }

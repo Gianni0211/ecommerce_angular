@@ -34,7 +34,7 @@
     </div>
    <div class="ceckout-border mt-3">
     <h5>Totale</h5>
-    <p class="lead">{{total}} <span>£</span></p>
+    <p class="lead">{{total.toFixed(2)}} <span>£</span></p>
    </div>
     
     <app-add-btn (click)="saveOrder()"  class="mt-5 mb-5"></app-add-btn>

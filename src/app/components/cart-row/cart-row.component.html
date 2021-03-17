@@ -14,7 +14,7 @@
   <p class="lead">{{det.quantity}}</p>
  </div>
  <div class="col-md-3 col-12 text-center text-md-left  ">
-  <p class="lead">{{det.quantity * det.item.price}} <span class="text-sm">£</span></p>
+  <p class="lead">{{(det.quantity * det.item.price).toFixed(2)}} <span class="text-sm">£</span></p>
  </div>
 </div>
 
