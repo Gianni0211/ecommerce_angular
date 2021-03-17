@@ -1,23 +1,23 @@
 .btn-bg-custom {
-  background-color: #cee5f2;
-  color: #536b78;
+  background-color: #118ab2;
+  color: #fceade;
   transition: 0.3s;
 }
 .btn-bg-custom:hover {
-  color: #cee5f2;
-  background-color: #536b78;
+  color: #fff;
+  background-color: #ff8a5b;
 }
 .arrow-btn {
-  background-color: #cee5f2;
-  color: #536b78;
+  background-color: #118ab2;
+  color: #ff8a5b;
   padding: 10px;
   border-radius: 10px;
   border: none;
   transition: 0.3s;
 }
 .arrow-btn:hover {
-  color: #cee5f2;
-  background-color: #536b78;
+  color: #118ab2;
+  background-color: #ff8a5b;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

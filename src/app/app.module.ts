@@ -15,6 +15,7 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { AddBtnComponent } from './components/add-btn/add-btn.component';
 import { QuantityModalComponent } from './components/quantity-modal/quantity-modal.component';
 import { CartComponent } from './components/pages/cart/cart.component';
+import { CartRowComponent } from './components/cart-row/cart-row.component';
 
 
 
@@ -29,6 +30,7 @@ import { CartComponent } from './components/pages/cart/cart.component';
     AddBtnComponent,
     QuantityModalComponent,
     CartComponent,
+    CartRowComponent,
     
     
     

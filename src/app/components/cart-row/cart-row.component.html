@@ -1,0 +1,20 @@
+
+ <div class="row m-md-3">
+
+ 
+ <div class="col-md-7 col-12 d-flex flex-row  justify-content-center ">
+  <img class="row-img " *ngIf="det.item.name === 'Pane'" src="../../../assets/img/pane-commerce.jpg" alt="item.img">
+  <img class="row-img " *ngIf="det.item.name === 'Birra'" src="../../../assets/img/birra-ecommerce.jpeg" alt="item.img">
+  <img class="row-img" *ngIf="det.item.name === 'Pasta'" src="../../../assets/img/pasta-ecommerce.jpeg" alt="item.img">
+  <img class="row-img" *ngIf="det.item.name === 'Sigarette'" src="../../../assets/img/sigarette-ecommerce.jpeg"
+   alt="item.img">
+  <p class="lead ms-2">{{det.item.name}}</p>
+ </div>
+ <div class="col-md-2 col-12 text-center md-text-left ">
+  <p class="lead">{{det.quantity}}</p>
+ </div>
+ <div class="col-md-3 col-12 text-center text-md-left  ">
+  <p class="lead">{{det.quantity * det.item.price}} <span class="text-sm">£</span></p>
+ </div>
+</div>
+

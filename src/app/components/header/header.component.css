@@ -1,6 +1,9 @@
 .carousel-custom {
-  width: 600px;
+  width: 60%;
   margin-top: 50px;
   margin: auto;
   color: black;
+}
+.carousel-custom:focus {
+  outline: none;
 }

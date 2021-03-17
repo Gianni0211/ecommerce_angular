@@ -1,13 +1,13 @@
-<div class="px-5 py-2 nav-bg w-100 mb-5">
- <nav class="navbar px-10">
-  <a class="navbar-brand home-icon nav-custom-color fs-2 " routerLink="/home">
+<div class="px-5 py-1 nav-bg w-100 mb-5">
+ <nav class="navbar px-3">
+  <a title="home" class="navbar-brand home-icon nav-custom-color fs-2 " routerLink="/home">
    <fa-icon class="home-icon" [icon]="faCashRegister"></fa-icon>
   </a>
  
-  <div class="float-end nav-custom-color d-flex flex-row lead "   >
-   <p class="me-4">{{userName}}</p>
-   <fa-icon class="cart-icon" routerLink="/cart" [icon]="faShoppingCart"></fa-icon>
-   <span class="count">{{itemsCount}}</span>
+  <div class="float-end nav-custom-color pt-4 d-flex flex-row md-lead "   >
+   <p class="me-4 fw-bold">{{userName}}</p>
+   <fa-icon title="carrello" class="cart-icon" routerLink="/cart" [icon]="faShoppingCart"></fa-icon>
+   <span *ngIf="itemsCount !== 0" class="count badge">{{itemsCount}}</span>
   </div>
   
  

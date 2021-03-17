@@ -10,10 +10,10 @@
    <input type="number" [(value)]="quantity" class="input ps-2">
    <div class="ms-3">
     <button (click)="decrement()"  class="me-1 arrow-btn">
-     <fa-icon [icon]="faArrowLeft"></fa-icon>
+     <fa-icon [icon]="faMinus"></fa-icon>
     </button>
     <button (click)="increment()" class="arrow-btn">
-     <fa-icon [icon]="faArrowRight"></fa-icon>
+     <fa-icon [icon]="faPlus"></fa-icon>
     </button>
    </div>
   </form>
@@ -22,8 +22,8 @@
   </div>
  </div>
  <div class="modal-footer">
-  <app-add-btn (click)="saveItem()"></app-add-btn>
+  <app-add-btn   (click)="saveItem()">Aggiungi</app-add-btn>
  </div>
 </ng-template>
-<button class="btn  btn-bg-custom" (click)="open(content)">Aggiungi al carrello</button>
+<button class="btn btn-sm md-btn-lg  btn-bg-custom " (click)="open(content)">Aggiungi</button>
 

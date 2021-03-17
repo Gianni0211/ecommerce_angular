@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { JwtService } from '../utils/jwt.service';
 import { Cart } from 'src/app/models/Cart';
-import { Observable} from 'rxjs';
+import { Observable, Subject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +12,7 @@ export class CartService {
   urlGet : string = 'http://localhost:8080//api/cart/get';
   quantity: number;
   itemId: number;
+  subject = new Subject<any>();
   
 
   constructor(private http: HttpClient, private jwtService: JwtService) { }
@@ -34,5 +35,12 @@ export class CartService {
     resp = this.http.get<Cart>(this.urlGet,{headers: { 'auth-token': token}});
     return resp;
   }
+  sendClickEvent(){
+    this.subject.next();
+  }
+  getClickEvent(){
+    return this.subject.asObservable();
+  }
+  
  
 }

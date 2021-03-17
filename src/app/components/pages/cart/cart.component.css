@@ -1,4 +1,19 @@
 .bill {
-  background-color: antiquewhite;
-  margin: 0 10px;
+  background-color: #fceade;
+  color: #073b4c;
+  margin: 0;
+}
+.cart-row {
+  border-top: solid 1px #073b4c;
+}
+
+.bg-title-row {
+  background-color: #fdd8bf;
+}
+.check-out {
+  background-color: #073b4c;
+  color: #fceade;
+}
+.ceckout-border {
+  border-bottom: solid #fceade 1px;
 }

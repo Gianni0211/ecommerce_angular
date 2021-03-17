@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { Item } from 'src/app/models/Item';
 import { CartService } from 'src/app/services/cart.service';
-import { Cart } from 'src/app/models/Cart';
+
 
 @Component({
   selector: 'app-quantity-modal',
@@ -13,8 +13,9 @@ import { Cart } from 'src/app/models/Cart';
 export class QuantityModalComponent implements OnInit {
   @Input() item: Item;
   
-  faArrowLeft = faArrowLeft;
-  faArrowRight = faArrowRight;
+  
+  faMinus = faMinus;
+  faPlus = faPlus;
   quantity : number = 0;
   err: boolean;
   
@@ -52,8 +53,13 @@ export class QuantityModalComponent implements OnInit {
     this.cartService.saveItem(this.item.id, this.quantity).subscribe(data => {
       
       this.modalService.dismissAll();
-      alert('Articolo aggiunto al carrello');  
-    })
+      alert('Articolo aggiunto al carrello');
+      this.cartService.sendClickEvent();  
+      
+      
+      
+    });
+    
   }
 
 }

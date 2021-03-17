@@ -1,4 +1,4 @@
-<div class="card card-custom">
+<div class="card card-custom shadow">
  
  <img class="img-custom " *ngIf="item.name === 'Pane'" src="../../../assets/img/pane-commerce.jpg" 
  alt="item.img" >
@@ -6,13 +6,13 @@
  <img class="img-custom" *ngIf="item.name === 'Pasta'" src="../../../assets/img/pasta-ecommerce.jpeg" alt="item.img" >
  <img class="img-custom" *ngIf="item.name === 'Sigarette'" src="../../../assets/img/sigarette-ecommerce.jpeg" alt="item.img" >
  
- <div class="d-flex flex-row m-3 justify-content-around">
+ <div class="d-flex flex-row m-1 mt-2  justify-content-around">
 <div class="d-flex flex-row">
  <p class="me-1">{{item.name}}: </p>
  <p class="price">{{item.price}} <span>€</span></p>
 </div>
   
-<app-quantity-modal [item]="item"></app-quantity-modal>
+<app-quantity-modal class="shadow-custom"  [item]="item"></app-quantity-modal>
  </div>
  
 </div>

@@ -1,8 +1,8 @@
 .nav-bg {
-  background-color: #cee5f2;
+  background-color: #118ab2;
 }
 .nav-custom-color {
-  color: #536b78;
+  color: #fceade;
 }
 .home-icon {
   transition: 0.3s;
@@ -26,8 +26,8 @@
   left: 5px;
   font-size: 15px;
   font-weight: bold;
-  color: #cee5f2;
-  background-color: #536b78;
+  color: #fceade;
+  background-color: #ff8a5b;
   width: 22px;
   height: 22px;
   padding-left: 6px;
